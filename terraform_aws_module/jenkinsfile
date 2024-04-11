@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from GitHub
+                git 'https://github.com/yourusername/your-repo.git'
+            }
+        }
+        
+        stage('Terraform Init') {
+            steps {
+                // Initialize Terraform
+                echo 'Terraform init in progress'
+                sh 'terraform init'
+            }
+        }
+        
+        stage('Terraform Plan') {
+            steps {
+                // Terraform plan
+                echo 'Terraform Plan in progress'
+                sh 'terraform plan -var-file=variables.tfvars'
+            }
+        }
+        
+        stage('Terraform Apply') {
+            steps {
+                // Apply Terraform changes
+                echo 'Terraform Apply in progress'
+                sh 'terraform apply -var-file=variables.tfvars -auto-approve tfplan'
+            }
+        }
+        // Destroy Terraform resources fi needed
+        //stage('Terraform Destroy') {
+            //steps {
+                //sh 'terraform destroy -auto-approve'
+            //}
+        //}
+    }
+}

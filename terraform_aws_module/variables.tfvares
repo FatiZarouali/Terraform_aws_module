@@ -1,0 +1,9 @@
+region = "eu-west-3"
+vpc_name = "Dev_Vpc"
+vpc_cidr = "W.X.Y.Z/A"
+azs = ["A", "B", "C"]
+public_subnet_cidr_blocks = ["W.X.Y.Z/B", "W.X.Y.Z/B", "W.X.Y.Z/B"]
+private_subnet_cidr_blocks = ["W.X.Y.Z/B", "W.X.Y.Z/B", "W.X.Y.Z/B"]
+internet_gateway_name = "internet_gateway_DEV"
+backet_name = "terraform-state"
+backet_key = "DEV"
