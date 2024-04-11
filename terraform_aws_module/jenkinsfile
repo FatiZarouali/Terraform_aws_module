@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from GitHub
-                git 'https://github.com/FatiZarouali/Terraform_aws_module.git'
+                git 'https://github.com/FatiZarouali/Terraform_aws_module/tree/main/terraform_aws_module'
             }
         }
         
