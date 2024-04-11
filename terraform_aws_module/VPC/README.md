@@ -1,8 +1,11 @@
 # Configuration:
-IT creates a Virtual Private Cloud (VPC) with the specified CIDR block.
+It creates a Virtual Private Cloud (VPC) with the specified CIDR block.
+
 Enables DNS support and DNS hostnames.
+
 Tagged with the provided name.
+
 # variables:
-define the variables.
+It defines the variables.
 # output:
-output.tf return the vpc id from the vpc created.
+output.tf return the vpc id.
