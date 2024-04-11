@@ -19,9 +19,9 @@ In this Repository you will find folders that define the following AWS module:
 - public_NACL to create a public NACL for private subnets.
 - In each folder you will find a README.md file to describe the configuration.
 
-the main.tf Contains the resource configurations to create.
-the variables.tf: Contains variable definitions.
-the variables.tfvars: Contains the values for each variable, facilitating the process and enabling the creation of various services for different environments using the same modules, with modifications only to variable values.
-the version.tf: Includes the versions utilized in this project.
-the backend.tf: Consists of the configuration for the S3 bucket where we store the Terraform state.
+- the main.tf Contains the resource configurations to create.
+- the variables.tf: Contains variable definitions.
+- the variables.tfvars: Contains the values for each variable, facilitating the process and enabling the creation of various services for different environments using the same modules, with modifications only to variable values.
+- the version.tf: Includes the versions utilized in this project.
+- the backend.tf: Consists of the configuration for the S3 bucket where we store the Terraform state.
 
